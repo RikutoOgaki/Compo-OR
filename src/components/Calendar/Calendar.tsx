@@ -4,7 +4,6 @@ import style from '@/styles/components/Calendar/calendar.module.scss'
 
 type State = {
     CalendarSize: number,
-
 }
 
 export default function Calendar() {
