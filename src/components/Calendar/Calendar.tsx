@@ -2,19 +2,32 @@ import { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
 import style from '@/styles/components/Calendar/calendar.module.scss'
 
-type State = {
-    CalendarSize: number,
+type Props = {
+    calendarSize: string,
 }
 
-export default function Calendar() {
+export default function Calendar(props: Props) {
 
     const [state, setState] = useState({
-        CalendarSize: 0
+        calendarSize: props.calendarSize
     })
+
+    useEffect(() => {
+        setState({
+            ...state,
+            calendarSize: props.calendarSize
+        })
+    }, [props])
+
+    // 日付についてのあれこれのデータ ここから
+    const today = dayjs().format('YYYY/MM/DD')
+    console.log(today);
+
+    // ここまで
 
     return (
         <>
-            <div className={style.CalendarWrap} style={{ width: `${state.CalendarSize}px`, height: `${state.CalendarSize}px` }}>
+            <div className={style.CalendarWrap} style={{ width: `${state.calendarSize}`, height: `${state.calendarSize}` }}>
 
             </div>
         </>
