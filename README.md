@@ -1,4 +1,4 @@
-#自作Componentの開発
+##自作Componentの開発
 
 React + TypeScriptで使えるComponentを開発しています！
 
