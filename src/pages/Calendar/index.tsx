@@ -1,10 +1,17 @@
 import { useState, useEffect } from 'react'
 import Calendar from '@/components/Calendar/Calendar'
 import style from '@/styles/pages/Calendar/index.module.scss'
+import dayjs from 'dayjs'
 
 export default function CalendarHome() {
 
-    const [state, setState] = useState()
+    const day = dayjs()
+    const [state, setState] = useState({
+        nowYear: day.year(),
+        nowMonth: day.month() + 1,
+        calendarSize: ''
+    })
+
 
     return (
         <>
@@ -29,6 +36,11 @@ export default function CalendarHome() {
                     <div></div>
                 </div>
                 {/* CalendarComponentがここに入る */}
+                <Calendar
+                    nowYear={state.nowYear}
+                    nowMonth={state.nowMonth}
+                    calendarSize={state.calendarSize}
+                />
             </div>
         </>
     )
