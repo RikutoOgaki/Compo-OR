@@ -52,16 +52,13 @@ export default function Calendar(props: Props) {
 
 
 
-
-
-
     // ここまで
 
     return (
         <>
             <div className={style.CalendarWrap} style={{ width: `${state.calendarSize}`, height: `${state.calendarSize}` }}>
-                <table>
-                    <thead>
+                <table className={style.tab}>
+                    <thead className={style.thead}>
                         <tr>
                             {weekArray.map((e, week) =>
                                 <th key={week}>{e}</th>
