@@ -12,10 +12,10 @@ type Props = {
 export function Button(props: Props) {
 
     const [state, setState] = useState({
-        buttonText: props.buttonText,
-        buttonWidth: props.buttonWidth,
-        buttonHeight: props.buttonHeight,
-        backColor: props.backColor
+        buttonText: props.buttonText,// ボタンに入るテキストデータ
+        buttonWidth: props.buttonWidth,// ボタンの幅指定データ
+        buttonHeight: props.buttonHeight,// ボタンの高さ指定データ
+        backColor: props.backColor// ボタンの背景色データ
     })
 
     useEffect(() => {
@@ -33,7 +33,11 @@ export function Button(props: Props) {
         <>
             <button
                 className={style.buttonCompo}
-                style={{ width: `${state.buttonWidth}`, height: `${state.buttonHeight}`, backgroundColor: `${state.backColor}` }}
+                style={{
+                    width: `${state.buttonWidth}`,
+                    height: `${state.buttonHeight}`,
+                    backgroundColor: `${state.backColor}`
+                }}
             >{state.buttonText}</button>
         </>
     )

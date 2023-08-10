@@ -7,8 +7,8 @@ export default function BUttonPage() {
     const [state, setState] = useState({
         buttonText: 'tekitou',
         buttonWidth: '16rem',
-        buttonHeight: '2rem',
-        backColor: 'blue',
+        buttonHeight: '4rem',
+        backColor: 'green',
     })
 
     return (
