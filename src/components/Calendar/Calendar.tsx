@@ -49,6 +49,10 @@ export default function Calendar(props: Props) {
     // stateの月の日数を配列で持つ
     const toArray = [...new Array(date.daysInMonth())].map((_, e) => e + 1)
 
+    console.log(toArray);
+
+    // 1日の曜日の番号が一致するところをスタートするような配列を作る
+
 
 
 
@@ -66,7 +70,7 @@ export default function Calendar(props: Props) {
                         </tr>
                     </thead>
                     <tbody>
-                        {toArray.map((e, idx) => {
+                        {/* {toArray.map((e, idx) => {
 
                             const test = dayjs(`${state.nowYear}/${state.nowMonth}/${e}`).day()
 
@@ -76,7 +80,7 @@ export default function Calendar(props: Props) {
                                 </tr>
                             )
                         }
-                        )}
+                        )} */}
                     </tbody>
                 </table>
             </div>
