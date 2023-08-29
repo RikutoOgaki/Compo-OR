@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className={style.homeWrap}>
-
+        <h1 className={style.title}>Compo-OR</h1>
       </div>
     </>
   )
