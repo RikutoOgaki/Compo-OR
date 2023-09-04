@@ -6,8 +6,6 @@ export default function BUttonPage() {
 
     const [state, setState] = useState({
         buttonText: 'tekitou',
-        buttonWidth: '16rem',
-        buttonHeight: '4rem',
         backColor: 'green',
     })
 
@@ -16,8 +14,6 @@ export default function BUttonPage() {
             <div className={style.buttonWrap}>
                 <Button
                     buttonText={state.buttonText}
-                    buttonWidth={state.buttonWidth}
-                    buttonHeight={state.buttonHeight}
                     backColor={state.backColor}
                 />
             </div>
