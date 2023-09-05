@@ -4,7 +4,7 @@ import { Button } from '@/components/Button/Button'
 
 export default function BUttonPage() {
 
-    const [state, setState] = useState({
+    const [buttonstate, setButtonState] = useState({
         buttonText: 'tekitou',
         backColor: 'green',
     })
@@ -13,8 +13,8 @@ export default function BUttonPage() {
         <>
             <div className={style.buttonWrap}>
                 <Button
-                    buttonText={state.buttonText}
-                    backColor={state.backColor}
+                    buttonText={buttonstate.buttonText}
+                    backColor={buttonstate.backColor}
                 />
             </div>
         </>
