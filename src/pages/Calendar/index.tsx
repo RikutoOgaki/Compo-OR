@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Calendar from '@/components/Calendar'
-import style from '@/styles/pages/Calendar/index.module.scss'
+import style from '@/styles/calnedar.module.scss'
 import dayjs from 'dayjs'
 
 export default function CalendarHome() {

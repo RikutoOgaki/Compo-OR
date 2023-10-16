@@ -1,11 +1,11 @@
-import style from '@/styles/pages/Button/index.module.scss'
+import style from '@/styles/button.module.scss'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/Button'
 
 export default function BUttonPage() {
 
     const [buttonstate, setButtonState] = useState({
-        buttonText: 'tekitou',
+        buttonText: 'sample',
         backColor: 'green',
     })
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import style from '@/styles/components/Button/button.module.scss'
+import style from '@/styles/components/button.module.scss'
 
 
 type Props = {
