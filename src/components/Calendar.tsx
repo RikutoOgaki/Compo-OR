@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
-import style from '@/styles/components/Calendar/calendar.module.scss'
+import style from '@/styles/components/calendar.module.scss'
 
 type Props = {
     nowYear: number,

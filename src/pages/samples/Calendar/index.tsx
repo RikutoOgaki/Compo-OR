@@ -3,7 +3,7 @@ import Calendar from '@/components/Calendar'
 import style from '@/styles/calnedar.module.scss'
 import dayjs from 'dayjs'
 
-export default function CalendarHome() {
+export default function CalendarPage() {
 
     const day = dayjs()
     const [state, setState] = useState({

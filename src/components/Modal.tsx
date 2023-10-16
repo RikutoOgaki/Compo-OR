@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import style from '@/styles/components/Modal/modal.module.scss'
+import style from '@/styles/components/modal.module.scss'
 
 type ModalProps = {
     isOpen: boolean,
@@ -11,8 +11,11 @@ export function Modal({ isOpen, isClose, children }: ModalProps): JSX.Element {
 
     return (
         <>
-            <div>
-                <div>
+            <div
+                className={style.modalWrap}
+                onClick={isClose}
+            >
+                <div className={style.modalSubWrap}>
                     {children}
                 </div>
             </div>

@@ -2,7 +2,7 @@ import style from '@/styles/button.module.scss'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/Button'
 
-export default function BUttonPage() {
+export default function ButtonPage() {
 
     const [buttonstate, setButtonState] = useState({
         buttonText: 'sample',
