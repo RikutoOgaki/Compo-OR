@@ -7,9 +7,7 @@ type ModalProps = {
     children: ReactNode
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, isClose, children }) => {
-
-    if (isOpen) return null
+export function Modal({ isOpen, isClose, children }: ModalProps): JSX.Element {
 
     return (
         <>

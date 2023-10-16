@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Calendar from '@/components/Calendar/Calendar'
+import Calendar from '@/components/Calendar'
 import style from '@/styles/pages/Calendar/index.module.scss'
 import dayjs from 'dayjs'
 

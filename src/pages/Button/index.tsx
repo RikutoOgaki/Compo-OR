@@ -1,6 +1,6 @@
 import style from '@/styles/pages/Button/index.module.scss'
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/Button/Button'
+import { Button } from '@/components/Button'
 
 export default function BUttonPage() {
 
