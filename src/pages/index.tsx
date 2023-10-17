@@ -12,6 +12,7 @@ export default function Home() {
           <li><Link href={'/samples/Button'}>Button</Link></li>
           <li><Link href={'/samples/Calendar'}>Calendar</Link></li>
           <li><Link href={'/samples/Modal'}>Modal</Link></li>
+          <li><Link href={'/samples/Particle'}>Particle</Link></li>
         </ul>
       </div>
     </>
