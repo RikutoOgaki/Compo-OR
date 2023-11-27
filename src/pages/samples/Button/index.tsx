@@ -9,10 +9,15 @@ export default function ButtonPage() {
         backColor: 'green',
     })
 
+    function TestClick() {
+        console.log('押されました');
+    }
+
     return (
         <>
-            <div className={style.buttonWrap}>
+            <div>
                 <Button
+                    handleButtonClick={TestClick}
                     buttonText={buttonstate.buttonText}
                     backColor={buttonstate.backColor}
                 />

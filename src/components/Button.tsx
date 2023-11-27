@@ -5,6 +5,7 @@ import style from '@/styles/components/button.module.scss'
 type Props = {
     buttonText: string
     backColor: string,
+    handleButtonClick: () => void
 }
 
 export function Button(props: Props) {
@@ -30,6 +31,8 @@ export function Button(props: Props) {
                 style={{
                     backgroundColor: `${state.backColor}`
                 }}
+                // どんな関数でも受け入れるようにする値
+                onClick={props.handleButtonClick}
             >{state.buttonText}</button>
         </>
     )
