@@ -1,0 +1,28 @@
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .title {
+        font-size: 10rem;
+        color: #262626;
+
+        & span {
+            font-size: 10rem;
+            color: #5d5dff;
+        }
+    }
+
+    .linkBox {
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+            background-color: #737373;
+        }
+    }
+}
