@@ -13,3 +13,14 @@ button {
   color: #ffffff;
   cursor: pointer;
 }
+
+input {
+  border: none;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  border: #5d5dff 3px solid;
+  outline: none;
+}
+
