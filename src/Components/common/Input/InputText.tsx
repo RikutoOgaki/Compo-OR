@@ -13,6 +13,7 @@ export function InputText(props: Props) {
                 type="text"
                 onChange={props.onChange}
                 value={props.value}
+                className={props.className}
             />
         </>
     )
